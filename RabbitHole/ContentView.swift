@@ -2,23 +2,32 @@
 //  ContentView.swift
 //  RabbitHole
 //
-//  Created by Anthony Nasser on 10/25/23.
+//  Created by Anthony Nasser on 2/18/23.
 //
 
 import SwiftUI
+import UserNotifications
 
 struct ContentView: View {
+    @AppStorage("onboarded") var onboarded: Bool = false
+    
+    @StateObject var sVM: SettingsViewModel = SettingsViewModel()
+    @StateObject var oVM: OnboardingViewModel = OnboardingViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if (onboarded) {
+            HomeView()
+                .environmentObject(self.sVM)
+        } else {
+            OnboardingCore()
+                .environmentObject(self.sVM)
+                .environmentObject(self.oVM)
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

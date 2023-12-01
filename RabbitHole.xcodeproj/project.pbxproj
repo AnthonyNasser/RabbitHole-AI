@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E36C57EF2AEB981E008CCED2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C57EE2AEB981E008CCED2 /* SettingsViewModel.swift */; };
+		E36C57F12AEB9840008CCED2 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C57F02AEB9840008CCED2 /* OnboardingViewModel.swift */; };
+		E36C57F42AEB99CC008CCED2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36C57F32AEB99CC008CCED2 /* HomeView.swift */; };
 		E3C71F862AE9EF5B00899308 /* RabbitHoleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C71F852AE9EF5B00899308 /* RabbitHoleApp.swift */; };
 		E3C71F882AE9EF5B00899308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C71F872AE9EF5B00899308 /* ContentView.swift */; };
 		E3C71F8A2AE9EF5C00899308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C71F892AE9EF5C00899308 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E36C57EE2AEB981E008CCED2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		E36C57F02AEB9840008CCED2 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		E36C57F32AEB99CC008CCED2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E3C71F822AE9EF5B00899308 /* RabbitHole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbitHole.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C71F852AE9EF5B00899308 /* RabbitHoleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabbitHoleApp.swift; sourceTree = "<group>"; };
 		E3C71F872AE9EF5B00899308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E36C57ED2AEB980F008CCED2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E36C57EE2AEB981E008CCED2 /* SettingsViewModel.swift */,
+				E36C57F02AEB9840008CCED2 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E36C57F22AEB99AC008CCED2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E36C57F32AEB99CC008CCED2 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E3C71F792AE9EF5B00899308 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +74,8 @@
 		E3C71F842AE9EF5B00899308 /* RabbitHole */ = {
 			isa = PBXGroup;
 			children = (
+				E36C57F22AEB99AC008CCED2 /* Views */,
+				E36C57ED2AEB980F008CCED2 /* ViewModels */,
 				E3C71F852AE9EF5B00899308 /* RabbitHoleApp.swift */,
 				E3C71F872AE9EF5B00899308 /* ContentView.swift */,
 				E3C71F892AE9EF5C00899308 /* Assets.xcassets */,
@@ -139,6 +164,9 @@
 			files = (
 				E3C71F882AE9EF5B00899308 /* ContentView.swift in Sources */,
 				E3C71F862AE9EF5B00899308 /* RabbitHoleApp.swift in Sources */,
+				E36C57EF2AEB981E008CCED2 /* SettingsViewModel.swift in Sources */,
+				E36C57F42AEB99CC008CCED2 /* HomeView.swift in Sources */,
+				E36C57F12AEB9840008CCED2 /* OnboardingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
